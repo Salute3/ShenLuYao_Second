@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 点击消失的样式 */
+input:focus::placeholder {
+    opacity: 0;
+}
+
+/* 登录页面的主盒子 */
+.LogOn {
+    display: block;
+    position: fixed;
+    background: url(../image/2127531_105629251000_2.jpg)no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+/* 登录框 */
+#logOn {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    margin-top: -83px;
+    margin-left: -125px;
+    text-align: center;
+    width: 250px;
+    height: 180px;
+    background: white;
+    border-radius: 4%;
+}
+
+/* 登录页面的log */
+#lofter {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -86px;
+    margin-top: -32px;
+    font-size: 300%;
+    color: #346061;
+
+}
+
+/* 登录框题目 */
+#logOn #mima {
+    font-size: 100%;
+    font-weight: 700;
+    margin: 3px;
+    color: #346061;
+}
+
+/* 分割线 */
+#logOn hr {
+    color: #99999938;
+}
+
+/* 登录的账号密码框 */
+#logOn .inputLogOn {
+    width: 220px;
+    height: 25px;
+    margin-top: 8px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding-left: 12px;
+    font-size: 12px;
+}
+
+/* 登录错误提示语 */
+#logOn #logOnFalse {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    transform: scale(0.8);
+    color: red;
+}
+
+/* 登录按钮 */
+#logOn button {
+    width: 235px;
+    height: 25px;
+    margin-top: 18px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 14px;
+    background: #346061;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* 未勾选提示语 */
+#logOn #uncheck {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    font-size: 10px;
+    transform: scale(0.8);
+    color: red;
+}
+
+/* 勾选框 */
+#logOn #check {
+    position: relative;
+    top: 4px;
+    left: 12px;
+    transform: scale(0.8);
+}
+
+/* 勾选框提示语 */
+#logOn #agree {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    color: hsl(0, 0%, 60%);
+    height: 5px;
+    line-height: 5px;
+    font-size: 10px;
+    transform: scale(0.8);
+}
+
+/* 提示语的字体样式 */
+#logOn span {
+    color: #346061;
+}
+
+
+
+/* 主页 */
+/* 主页搜索框 */
+.homepage {
+    display: none;
+}
+
+.searchlab {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+
+#search {
+    display: block;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 85%;
+    height: 35px;
+    padding-left: 35px;
+    font-size: 12px;
+    border-radius: 18px;
+    background-color: #f6f6f6;
+    border: #f6f6f6;
+}
+
+#searchImg {
+    position: fixed;
+    top: 10px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* 底部框 */
+.buttonLab {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+
+}
+
+.buttonLab img {
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.buttonLab .add {
+    width: 35px;
+    height: 35px;
+
+}
+
+.tag ul {
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+
+}
+
+.tag li {
+    display: inline-block;
+    width: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #999;
+    line-height: 30px;
+}
+
+.tag #recommed {
+    border-bottom: 3px solid black;
+}
+
+/* 数据盒子的样式 */
+.dataLab {
+    margin-top: 60px;
+    /* column-count:2;
+    column-gap: 5px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    flex-grow: 0
+}
+
+.dataImg {
+    width: 140px;
+    border-radius: 10%;
+}
+
+.Title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.label {
+    display: inline-block;
+    color: #b4b4b4;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 1px 5px;
+}
+
+.authorNames {
+    color: #b4b4b4;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.heart {
+    position: absolute;
+    width:15px;
+    left: 100px;
+    
+}
+.back {
+    position: fixed;
+    bottom: 60px;
+    right: 16px;
+}
+
+.back img {
+    width: 30px;
+    height: 30px;
+}
+/* 搜索页面样式 */
+.searchInterface {
+    display: none;
+}
+
+.searchInterface p {
+   position: absolute;
+   top: 50px;
+   left: 20px;
+   font-weight: 700;
+}
